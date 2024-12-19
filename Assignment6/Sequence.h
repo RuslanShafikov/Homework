@@ -10,23 +10,23 @@ template <typename T>
 class Sequence {
 private:
     int d;
-    std::vector<double> vec;
+    std::vector<float> vec;
     T typeOfSequence;
 public:
-    Sequence(T &typeOfSequence, int &num, std::vector<double>& vec);
+    Sequence(T &typeOfSequence, int &num, std::vector<float>& vec);
 
     bool foo();
 };
 
 template <>
-class Sequence<double> {
+class Sequence<float> {
 private:
-    double typeOfSequence;
+    float typeOfSequence;
     int d;
-    std::vector<double> vec;
+    std::vector<float> vec;
 public:
 
-    Sequence(double typeOfSequence, int d, std::vector<double> vec)
+    Sequence(float typeOfSequence, int d, std::vector<float> vec)
         : typeOfSequence(typeOfSequence), d(d), vec(vec) {}
     bool foo() {
         return true;
@@ -38,9 +38,9 @@ class Sequence<int> {
 private:
     int typeOfSequence;
     int d;
-    std::vector<double> vec;
+    std::vector<float> vec;
 public:
-    Sequence(int typeOfSequence, int d, std::vector<double> vec)
+    Sequence(int typeOfSequence, int d, std::vector<float> vec)
         : typeOfSequence(typeOfSequence), d(d), vec(vec) {}
 
     bool foo() {

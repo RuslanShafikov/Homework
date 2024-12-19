@@ -9,9 +9,9 @@ st112650@stdudent.spbu.ru
 #include <vector>
 class Class3 {
 public:
-    bool bar(int &d, std::vector<double>& vec);
+    bool bar(int &d, std::vector<float>& vec);
     int c_3_1();
-    double c_3_2();
+    float c_3_2();
     void c_3_3();
 };
 #endif

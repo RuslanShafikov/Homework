@@ -8,10 +8,10 @@ st112650@stdudent.spbu.ru
 #include <vector>
 class Class2 {
 public:
-    bool bar(const int &d, std::vector<double>& vec);
+    bool bar(int &d, std::vector<float>& vec);
 
     int c_2_1();
-    double c_2_2();
+    float c_2_2();
     void c_2_3();
 };
 #endif

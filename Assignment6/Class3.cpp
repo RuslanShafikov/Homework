@@ -4,7 +4,7 @@ st112650@stdudent.spbu.ru
 */
 #include "Class3.h"
 
-bool Class3::bar(int &d, std::vector<double> & vec) {
+bool Class3::bar(int &d, std::vector<float> & vec) {
     if (d == -1*static_cast<int>(vec.size())) {
         return true;
     }
@@ -16,7 +16,7 @@ bool Class3::bar(int &d, std::vector<double> & vec) {
 int Class3::c_3_1() {
     return 3;
 }
-double Class3::c_3_2() {
+float Class3::c_3_2() {
     return 3.0;
 }
 void Class3::c_3_3() {}
