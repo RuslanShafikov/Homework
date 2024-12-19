@@ -1,3 +1,7 @@
+/*# Assignment 6
+Shafikov Ruslan Alvirtovich, group 24.Б83 - мм
+st112650@stdudent.spbu.ru
+*/
 #include <vector>
 #include <iostream>
 #ifndef Seq_H
@@ -22,8 +26,8 @@ private:
     std::vector<double> vec;
 public:
 
-Sequence(double typeOfSequence, int d, std::vector<double> vec)
-    : typeOfSequence(typeOfSequence), d(d), vec(vec) {}
+    Sequence(double typeOfSequence, int d, std::vector<double> vec)
+        : typeOfSequence(typeOfSequence), d(d), vec(vec) {}
     bool foo() {
         return true;
     }

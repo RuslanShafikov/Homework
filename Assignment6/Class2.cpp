@@ -1,3 +1,7 @@
+/*# Assignment 6
+Shafikov Ruslan Alvirtovich, group 24.Б83 - мм
+st112650@stdudent.spbu.ru
+*/
 #include "Class2.h"
 
 bool Class2::bar(const int &d, std::vector<double>& vec) {
@@ -7,6 +11,10 @@ bool Class2::bar(const int &d, std::vector<double>& vec) {
     }
     return false;
 }
-int Class2::c_2_1() { return 2; }
-double Class2::c_2_2() { return 2.0; }
+int Class2::c_2_1() {
+    return 2;
+}
+double Class2::c_2_2() {
+    return 2.0;
+}
 void Class2::c_2_3() {}
