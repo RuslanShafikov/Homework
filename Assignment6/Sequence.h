@@ -19,14 +19,14 @@ public:
 };
 
 template <>
-class Sequence<float> {
+class Sequence<double> {
 private:
-    float typeOfSequence;
+    double typeOfSequence;
     int d;
     std::vector<float> vec;
 public:
 
-    Sequence(float typeOfSequence, int d, std::vector<float> vec)
+    Sequence(double typeOfSequence, int d, std::vector<float> vec)
         : typeOfSequence(typeOfSequence), d(d), vec(vec) {}
     bool foo() {
         return true;

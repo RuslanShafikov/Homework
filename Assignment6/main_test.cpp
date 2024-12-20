@@ -11,9 +11,9 @@ st112650@stdudent.spbu.ru
 
 TEST(SequenceTest, TestSequenceDouble) {
     std::vector<float> vec = { 1.0, 2.0, 3.0 };
-    float k = 5.5;
+    double k = 5.5;
     int j = 3;
-    Sequence<float> seq(k, j, vec);
+    Sequence<double> seq(k, j, vec);
 
     EXPECT_TRUE(seq.foo());
 }
@@ -60,9 +60,9 @@ TEST(Class1Test, TestClass1) {
     Class1 c1;
     std::vector<float> vec = { 1.0, 2.0, 3.0 };
     int a = 1;
-    EXPECT_FALSE(c1.bar(a, vec));
+    EXPECT_TRUE(c1.bar(a, vec));
     a = -1;
-    EXPECT_EQ(c1.bar(a, vec), 0);
+    EXPECT_FALSE(c1.bar(a, vec));
 
     EXPECT_EQ(c1.c_1_1(), 1);
     EXPECT_DOUBLE_EQ(c1.c_1_2(), 1.0);

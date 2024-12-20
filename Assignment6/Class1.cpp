@@ -7,7 +7,7 @@ st112650@stdudent.spbu.ru
 
 bool Class1::bar(int &d, std::vector<float>& vec) {
     if (d > 0) {
-        return false;
+        return true;
     }
 
     vec.push_back(0);
